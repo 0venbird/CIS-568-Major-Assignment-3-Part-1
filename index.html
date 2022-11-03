@@ -28,13 +28,13 @@
         }
         path {
             stroke-width: .5px;
-            stroke: gray
+            stroke: white
         }
 
         path:hover {
             opacity: .6;
             stroke: black;
-            fill: deepskyblue;
+            fill: white;
             stroke-width: 2px;
         }
         #container{
@@ -165,7 +165,7 @@
         /*----------------------Color Scaling--------------------*/
         /*-------------------------------------------------------*/
         ////https://observablehq.com/@d3/working-with-color
-        var colorInterpolator = d3.interpolateRgbBasis(["#fc5c17", "black"].reverse())
+        var colorInterpolator = d3.interpolateRgbBasis(['purple', 'blue', 'slategray'].reverse())
 
         // if the data is scaled using linear scale
         let linearScale = d3.scaleLinear()
