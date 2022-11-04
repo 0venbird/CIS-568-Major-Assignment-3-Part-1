@@ -170,7 +170,7 @@
         // if the data is scaled using linear scale
         let linearScale = d3.scaleLinear()
             .domain(d3.extent(geojson.features, (d) => {
-                return d['properties']['POP2010']
+                return (d['properties']['POP2010'] / d['properties']['SUM_SQUARE'])
             }))
 
         // gini index scale linear
